@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+}
+a{
+    cursor: pointer;
+}
+
+/* hero-section */
+.hero-section{
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/hero-bg.jpg);
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+.logo{
+    font-size: 1.5rem;
+}
+.header-nav{
+    width: 30%;
+}
+.header-nav ul{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.header-nav li{
+    text-align: right;
+    list-style: none;
+}
+.header-nav a{
+    display: block;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.header-nav a:hover{
+    transform: scale(1.1);
+}
+.main-container{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+}
+.main-title{
+    background: linear-gradient(90deg,#fb9905,#f200ff);
+    transform: skewX(-30deg);
+    box-sizing: border-box;
+    position: absolute;
+    top: 40%;
+    left: 270px;
+    padding: 20px;    
+}
+.main-title h1{
+    font-size: 3rem;
+    transform: skewX(30deg);
+    margin-left: 80px;
+    color: #330000;
+    opacity: 0.8;
+}
+
+/* about-section */
+.about-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 100px 0;
+    border: 2px solid #888;
+    overflow: hidden;
+}
+.icon-container{
+    width: 20%;
+    height: 100%;
+    background-color: #ede6e6;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+.icon-container i{
+    font-size: 3rem;
+}
+.icon-container h3{
+    font-size: 1.5rem;
+}
+.text-area{
+    width: 60%;
+    height: 100%;
+    padding: 3% 10%;
+}
+.text-area h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+}
+.text-area p{
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.side-bar{
+    width: 20%;
+    height: 100vh;
+    background-color: #ede6e6;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.side-bar h3{
+    height: 50%;
+    margin-top: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.side-nav ul{
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+}
+.side-nav li{
+    padding-bottom: 50px;
+}
+.side-nav a{
+    display: block;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.side-nav a:hover{
+    transform: scale(1.1);
+}
+
+/* works-section */
+.works-section{
+    width: 100%;
+}
+.works-header{
+    width: 100%;
+    height: 15vh;
+    background-color: #fff;
+    color: black;
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.works-logo{
+    font-size: 1.5rem;
+}
+.work-container{
+    width: 100%;
+    height: auto;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+}
+.img-container{
+    width: 50%;
+    text-align: center;
+}
+.img-container img{
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+}
+.text-container{
+    width: 50%;
+    padding: 5%;
+}
+.text-container h4{
+    padding-bottom: 20px;
+}
+
+/* フッター */
+footer{
+    height: 100vh;
+    margin-top: 50px;
+    border-top: 2px solid black;
+}
+.main-footer{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.main-footer h2{
+    text-align: center;
+    padding:  50px 0 30px;
+    font-size: 2rem;
+}
+.main-footer p{
+    margin-bottom: 15px;
+}
+.small-footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+.small-footer h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+
+/* レスポンシブ */
+@media (max-width: 768px){
+    /* トップページ */
+    .hero-section{
+        background-size: cover;
+        background-position: center;
+        background-image: url(images/hero-bg.jpg);
+        width: 100%;
+        height: 100vh;
+    }
+    .header{
+        width: 100%;
+        height: auto;
+        background-color: black;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+    .logo{
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    .header-nav{
+        width: 50%;
+        padding: 10px;
+    }
+    .header-nav ul{
+        display: flex;
+        text-align: right;
+        cursor: pointer;
+        list-style: none;
+    }
+    .header-nav a{
+        text-decoration: none;
+    }
+    .main-container{
+        width: 100%;
+        height: 100vh;
+        position: static;
+        overflow: hidden;
+    }
+    .main-title{
+        background: linear-gradient(90deg,#fb9905,#f200ff);
+        transform: skewX(0);
+        box-sizing: border-box;
+        position: static;
+        margin-top: 50%;
+        padding: 20px;    
+    }
+    .main-title h1{
+        font-size: 3rem;
+        transform: skewX(0);
+        margin-left: 0;
+        text-align: center;
+        color: #330000;
+        opacity: 0.8;
+    }
+
+    /* aboutページ */
+    .about-section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    .icon-container{
+        width: 100%;
+        height: auto;
+        background-color: #ede6e6;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+    .icon-container i{
+        font-size: 3rem;
+    }
+    .icon-container h3{
+        font-size: 1.5rem;
+    }
+    .text-area{
+        width: 100%;
+        height: auto;
+        padding: 10%;
+    }
+    .text-area h2{
+        text-align: center;
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .text-area p{
+        padding: 10px;
+        line-height: 1.7;
+    }
+    .side-bar{
+        width: 100%;
+        height: auto;
+        background-color: #ede6e6;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .side-bar h3{
+        margin-top: 0;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .side-nav ul{
+        display: flex;
+        text-align: center;
+        cursor: pointer;
+        list-style: none;
+    }
+    .side-nav li{
+        padding: 20px;
+    }
+    .side-nav a{
+        font-weight: bold;
+    }
+
+    /* worksページ */
+    .works-section{
+        width: 100%;
+    }
+    .works-header{
+        width: 100%;
+        height: auto;
+        background-color: black;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 5%;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    .works-logo{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .work-container{
+        width: 100%;
+        height: auto;
+        padding: 50px 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-container{
+        width: 100%;
+        text-align: center;
+    }
+    .img-container img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .text-container{
+        width: 100%;
+        padding: 5%;
+    }
+    .text-container h4{
+        padding-bottom: 20px;
+    }
+
+    /* フッター */
+    footer{
+        height: auto;
+        margin-top: 100px;
+        border-top: 2px solid black;
+    }
+    .main-footer{
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .main-footer h2{
+        text-align: center;
+        padding:  50px 0 30px;
+    }
+    .main-footer p{
+        margin-bottom: 15px;
+    }
+    .small-footer{
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+    }
+    .small-footer h2{
+        margin-bottom: 20px;
+    }
+}

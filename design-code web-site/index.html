@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignCODE.</title>
+
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+ 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- フォントオーサム -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- lightbox2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="logo">
+            <h2>DesignCode.</h2>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#top">TOP</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero-section -->
+    <section id="top" class="hero-section">
+        <video src="video/hero-video.mp4" autoplay loop muted preload="">
+        </video>
+        <h1 class="main-title">
+            Hello New World
+        </h1>
+    </section>
+
+    <!-- about-section -->
+    <section id="about" class="about-section">
+        <div class="image-area">
+            <img src="images/about-man.jpg" alt="" class="man-img">
+            <img src="images/about-woman.jpg" alt="" class="woman-img">
+        </div>
+        <div class="text-area">
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iste qui placeat dolore maiores. Similique sunt officia delectus deleniti sequi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iste qui placeat dolore maiores. Similique sunt officia delectus deleniti sequi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iste qui placeat dolore maiores. Similique sunt officia delectus deleniti sequi!</p>
+        </div>
+    </section>
+
+    <!-- feature-section -->
+    <section id="feature" class="feature-section">
+        <h2>Feature</h2>
+        <div class="circles service">
+            <h4>Service</h4>
+            <i class="fa-solid fa-hand-holding"></i>
+        </div>
+        <div class="circles performance">
+            <h4>Performance</h4>
+            <i class="fa-solid fa-gears"></i>
+        </div>
+        <div class="circles design">
+            <h4>Design</h4>
+            <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+        </div>
+        <div class="circles technology">
+            <h4>Technology</h4>
+            <i class="fa-solid fa-microchip"></i>
+        </div>
+        <div class="containers service-container">
+            <div class="container-title">
+                <h3>Service</h3>
+                <i class="fa-solid fa-hand-holding"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quis distinctio ex, eveniet repudiandae tempore placeat voluptas assumenda impedit quam nihil, fugiat sapiente ut sint corporis mollitia necessitatibus asperiores iste.</p>
+        </div>
+        <div class="containers performance-container">
+            <div class="container-title">
+                <h3>Performance</h3>
+                <i class="fa-solid fa-gears"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, error incidunt rerum maxime iste quis debitis sed repellat animi commodi rem doloribus voluptate ratione dolor non cumque autem totam itaque.</p>
+        </div>
+        <div class="containers design-container">
+            <div class="container-title">
+                <h3>Design</h3>
+                <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum facere distinctio sequi sit. Necessitatibus adipisci nesciunt ipsum rerum repellat in? Nam error itaque non eaque necessitatibus iusto nihil, alias tempore?</p>
+        </div>
+        <div class="containers technology-container">
+            <div class="container-title">
+                <h3>Technology</h3>
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et esse corrupti qui recusandae voluptates. Quaerat voluptates illo necessitatibus repudiandae doloribus temporibus eius natus adipisci, sed recusandae cumque eos nihil.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <a href="images/gallery01.jpg" data-lightbox="photo" date-title="">
+                <img src="images/gallery01.jpg" alt="">
+            </a>
+            <a href="images/gallery02.jpg" data-lightbox="photo" date-title="">
+                <img src="images/gallery02.jpg" alt="">
+            </a>
+            <a href="images/gallery03.jpg" data-lightbox="photo" date-title="">
+                <img src="images/gallery03.jpg" alt="">
+            </a>
+            <a href="images/gallery04.jpg" data-lightbox="photo" date-title="">
+                <img src="images/gallery04.jpg" alt="">
+            </a>
+            <a href="images/gallery05.jpg" data-lightbox="photo" date-title="">
+                <img src="images/gallery05.jpg" alt="">
+            </a>
+            <a href="images/gallery06.jpeg" data-lightbox="photo" date-title="">
+                <img src="images/gallery06.jpeg" alt="">
+            </a>
+            <a href="images/gallery07.jpg" data-lightbox="photo" date-title="">
+                <img src="images/gallery07.jpg" alt="">
+            </a>
+            <a href="images/gallery08.jpg" data-lightbox="photo" date-title="">
+                <img src="images/gallery08.jpg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- contact-section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <form action="#">
+            <tr>
+                <th>
+                    <label for="name">Name</label>
+                </th>
+                <td>
+                    <input type="text" id="name" name="name">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="email">Email</label>
+                </th>
+                <td>
+                    <input type="email" id="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="message">Detail</label>
+                </th>
+                <td>
+                    <textarea name="message" id="message" cols="30" rows="9"></textarea>
+                </td>
+            </tr>
+            <input type="submit" class="button" value="Submit">
+        </form>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="main-footer">
+            <h3>DesignCODE.</h3>
+            <h4>Address</h4>
+            <p>東京都〇〇区〇〇1-2-3</p>
+            <h4>TEL</h4>
+            <p>03-〇〇〇〇-1234</p>
+        </div>
+        <div class="small-footer">
+            <p><small>&copy; 2023 DesignCODE.</small></p>
+        </div>
+    </footer>
+
+
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ 
+            reset: false,
+            duration: 2000,
+            easing: 'ease',
+            distance: "500px", 
+        });
+        ScrollReveal().reveal('.main-title', { 
+            delay: 500,
+            duration: 5000,
+            scale: 0.1,
+            opacity: 0.1,
+            distance: 0
+        });
+        ScrollReveal().reveal('.man-img', { 
+            delay: 500,
+            scale: 0.5,
+            origin: "right" 
+        });
+        ScrollReveal().reveal('.woman-img', { 
+            delay: 1500,
+            scale: 0.5,
+            origin: "right" 
+        });
+    </script>
+
+    <!-- feature-section JavaScript -->
+    <script>
+        const circles=document.querySelectorAll(".circles");
+        // console.log(circles);
+        const containers=document.querySelectorAll(".containers");
+        // console.log(containers);
+        circles[0].addEventListener("click", () => {
+            containers[0].classList.add("active")    
+        });
+        circles[1].addEventListener("click", () => {
+            containers[1].classList.add("active")    
+        });
+        circles[2].addEventListener("click", () => {
+            containers[2].classList.add("active")    
+        });
+        circles[3].addEventListener("click", () => {
+            containers[3].classList.add("active")    
+        });
+        containers[0].addEventListener("click", () => {
+            containers[0].classList.remove("active")    
+        });
+        containers[1].addEventListener("click", () => {
+            containers[1].classList.remove("active")    
+        });
+        containers[2].addEventListener("click", () => {
+            containers[2].classList.remove("active")    
+        });
+        containers[3].addEventListener("click", () => {
+            containers[3].classList.remove("active")    
+        });
+    </script>
+
+    <!-- lightbox2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+        })
+    </script>
+</body>
+</html>

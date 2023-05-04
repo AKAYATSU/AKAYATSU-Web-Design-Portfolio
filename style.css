@@ -271,6 +271,12 @@ video{
     border: 2px solid #6289a4;
     animation-duration: 15s;
 }
+.wp{
+    width: 400px;
+    height: 400px;
+    border: 2px solid #9283be;
+    animation-duration: 24s;
+}
 @keyframes circle-rotate{
     0%{
         transform: translate(-50%,-50%) rotate(0deg);
@@ -296,6 +302,9 @@ i{
 }
 .js i{
     color: #6289a4;
+}
+.wp i{
+    color: #9283be;
 }
 
 @media (max-width: 768px){

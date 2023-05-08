@@ -5,14 +5,15 @@ var typed = new Typed('#typewriter', {
     loop: true,
   });
 
-const collection = document.querySelector(".collection");
+const content2 = document.querySelector(".content2");
 let colors = Array('#d2d200','#00a096','#00aaff','#ff006f','#ffbf1f');
-collection.onclick = function(e){
+content2.onclick = function(e){
+  const contentDistance = content2.getBoundingClientRect().top;
   let x = e.pageX;
-  let y = e.pageY - window.innerHeight;
-  console.log(e.pageY);
-  console.log(window.innerHeight)
-
+  let y = e.pageY - window.pageYOffset - contentDistance;
+  // console.log(e.pageY);
+  // console.log(window.pageYOffset);
+  // console.log(contentDistance);
 
   let splash = document.createElement('span');
   splash.classList.add("splash")
@@ -28,3 +29,4 @@ collection.onclick = function(e){
     splash.remove()
   },4000);
 }
+

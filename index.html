@@ -4,159 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKAYATSU Web Design Portfolio</title>
+    <title>AKAYATSU Web Design</title>
 
-    <!-- reset.css ress -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-
-    <!-- Font Awesom -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="main">
-        <header class="side-bar">
-            <a href="#top">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#works">WORKS</a>
-        </header>
-        <!-- hero-section -->
-        <section id="top" class="hero-section">
-            <h1 class="title">AKAYATSU Web Design</h1>
-            <h2 class="sub-title"><span>ツナガル</span>を<br class="sp">
-                <span>クリエイト</span>する<br class="sp">
-                <span>デザイン</span>を</h2>
-            <div class="video-container">
-                <video id="video" src="videos/video1.mp4" autoplay loop muted preload="">
-            </div>
-        </section>
+    
+    <!-- ヘッダー -->
+    <header class="header">
 
-        <!-- about-section -->
-        <section id="about" class="about-section">
-            <div class="text-container">
-                <h2 class="section-title about-title">About Me</h2>
-                <p class="about-p">
+        <a href="#home">AKAYATSU Web Design</a>
+        <i class="fa-solid fa-bars menu-btn"></i>
+
+
+        <!-- メニュー -->
+        <div class="menu">
+            <h2>AKAYATSU Web Design</h2>
+            <i class="fa-regular fa-circle-xmark close-btn"></i>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#works">Works</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+    
+    <!-- heroセクション -->
+    <section class="hero-section" id="home">
+
+        <div class="hero-text">
+            <h1>AKAYATSU Web Design</h1>
+            <p>
+                Hello.<br>
+                I am a web designer.<br>
+                My skill is <span id="typewriter"></span>
+            </p>
+        </div>
+
+        <div class="hero-img"></div>
+
+    </section>
+
+
+    <main>
+
+
+        <!-- aboutセクション -->
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+                <p class="about-text">
                     　はじめまして、AKAYATSUと申します。<br>
-                    30代後半、関西在住の駆け出し副業ウェブデザイナーです。
+                    年齢は30代後半、関西在住の駆け出しの副業ウェブデザイナーです。
                 </p>
-                <p class="about-p">
-                    　私は会社員をしていますが、この頃少し時間に余裕ができたので、
-                    お小遣い稼ぎ程度に副業でもしようかなと思った所、ウェブデザインという仕事と出会いました。
+                <p class="about-text">
+                    　私は会社員をしていますが、この頃少し時間に余裕ができたので、 お小遣い稼ぎ程度に副業でもしようかなと思った所、ウェブデザインという仕事と出会いました。
                 </p>
-                <p class="about-p">
-                    　そこからネットと書籍を使い独学でプログラミングの勉強を始めたのですが、
-                    すぐにウェブデザインの魅力にハマってしまい、そこからは毎日寝る間も惜しんで、
-                    夢中でウェブサイトを作っています。
+                <p class="about-text">
+                    　そこからネットと書籍を使い独学でプログラミングの勉強を始めたのですが、 すぐにウェブデザインの魅力にハマってしまい、そこからは毎日寝る間も惜しんで、 夢中でウェブサイトを作っています。
                 </p>
-                <p class="about-p">
-                    　現在はHTML、CSS、Javascriptを勉強中です。<br>
-                    経験は全くありませんが、ウェブデザインに対する情熱はしっかりと持っているつもりです。
+                <p class="about-text">
+                    　現在はHTML、CSS、Javascript、WordPressを勉強中です。<br>
+                    経験はありませんが、ウェブデザインに対する情熱はしっかりと持っているつもりです。
                 </p>
-                <p class="about-p">
-                    　必ずご依頼者様に満足頂けるウェブページを作れる様、誠意を持って取り組んで参りますので、
-                    どうぞ宜しくお願い致します。
+                <p class="about-text">
+                    　必ずご依頼者様に満足頂けるウェブページを作れる様、誠意を持って取り組んで参りますので、 どうぞ宜しくお願い致します。
                 </p>
             </div>
-            <div class="circle-container">
-                <div class="circles">
-                    <div class="circle html">
-                        <i class="fa-brands fa-html5"></i>
-                    </div>
-                    <div class="circle css">
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <div class="circle js">
-                        <i class="fa-brands fa-square-js"></i>
-                    </div>
-                    <div class="circle wp">
-                        <i class="fa-brands fa-wordpress"></i>
-                    </div>
-                </div>
-            </div>
+            
+            <h2>Click</h2>
+
+            
         </section>
 
-        <!-- works-section -->
-        <section id="works" class="works-section">
-            <h2 class="section-title works-title">My Works</h2>
-            <figure class="work">
-                <a href="design-code web-site/index.html" target="_blank"><img src="works/design-code.png" alt=""></a>
-                <div class="texts">
-                    <dl>
-                        <dt>Title</dt>
-                        <dd>架空のデザイン会社のLP</dd>
-                    </dl>
-                    <dl>
-                        <dt>Label</dt>
-                        <dd>レスポンシブ対応</dd>
-                    </dl>
-                    <dl>
-                        <dt>Volume</dt>
-                        <dd>5ページ</dd>
-                    </dl>
-                    <dl class="comment">
-                        <dt>comment</dt>
-                        <dd>内容は度外視で、とにかくデザイン重視でコーポレートサイトを制作しました。<br>
-                            トップページに動画を実装、ギャラリーページの実装、コンタクトフォームの制作等を行いました。 <br>
-                            再度になりますが、内容は全くありませんが、デザインはこだわりました。</dd>
-                    </dl>
-                </div>
-            </figure>
 
+        <!-- newsセクション -->
+        <section class="news-section" id="news">
 
-            <figure class="work">
-                <a href="collection/index.html" target="_blank"><img src="works/collection.png" alt=""></a>
-                <div class="texts">
-                    <dl>
-                        <dt>Title</dt>
-                        <dd>作品集サイト</dd>
-                    </dl>
-                    <dl>
-                        <dt>Label</dt>
-                        <dd>作品集</dd>
-                    </dl>
-                    <dl>
-                        <dt>Volume</dt>
-                        <dd>順次追加予定</dd>
-                    </dl>
-                    <dl class="comment">
-                        <dt>comment</dt>
-                        <dd>作品集サイトをオープンしました。<br>
-                        但し、作品集といっても実際は小技集の様な運用になると思います。<br>
-                        実装を試してみた表現を掲載していこうと思います。</dd>
-                    </dl>
-                </div>
-            </figure>
+            <div class="card">
+                <h2>News</h2>
+                <ul>
+                    <li>
+                        <p>2023/05/07</p>
+                        <h4>ポートフォリオサイトをリニューアルしました。</h4>
+                    </li>
+                    <li>
+                        <p>2023/05/07</p>
+                        <h4>WordPressのオリジナルテーマ作成対応可能です。</h4>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>2023/05/07</p>
+                            <h4>ここに記事のタイトルが入りますここに記事のタイトルが入りますここに記事のタイトルが入ります</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>2023/05/07</p>
+                            <h4>ここに記事のタイトルが入りますここに記事のタイトルが入りますここに記事のタイトルが入ります</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>2023/05/07</p>
+                            <h4>ここに記事のタイトルが入りますここに記事のタイトルが入りますここに記事のタイトルが入ります</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
         </section>
-        
 
-        <!-- フッター -->
-        <footer class="footer">
-            <div class="main-footer">
-                <h2 class="section-title footer-title">Postscript</h2>
-                <p>　最後まで当ポートフォリオサイトをご覧いただき、ありがとうございます。</p>
-                <p>　ご覧頂いた通り、まだまだ未熟故に至らない所も多々あるかと思います。<br>
-                    しかしこれまでの制作を経て、スキルアップは確実に実感できており、
-                    自分が表現したい事を実現できる様になってきています。</p>
-                <p>　経験はありませんが、ウェブデザインへの情熱には自信があります。<br>
-                    ご依頼頂いた制作に関しては100%の誠意を持って、
-                    必ずご依頼者様に満足頂けるウェブ制作を行いたいと思いますので、
-                    何卒、宜しくお願い致します。</p>
+
+        <!-- worksセクション -->
+        <section class="works-section" id="works">
+
+            <div class="box">
+                <h2>Works</h2>
             </div>
-            <div class="small-footer">
-                <h3>AKAYATSU Web Design</h3>
-                <p><small>&copy; 2023 AKAYATSU Web Design</small></p>
+
+            <div class="works-container">
+                <ul>
+                    <li>
+                        <a href="works/Menu Bar/index.html" target="_blank">
+                            <img src="images/works/menu_bar_website.png" alt="">
+                            <h4>メニューボタンを実装した架空のウェブサイトを作ってみました</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="ready">
+                            <h3>Getting Ready</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="ready">
+                            <h3>Getting Ready</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="ready">
+                            <h3>Getting Ready</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="ready">
+                            <h3>Getting Ready</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="ready">
+                            <h3>Getting Ready</h3>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </footer>
+
+        </section>
 
     </main>
 
 
+    <footer>
+
+        <h2>AKAYATSU Web Design</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#works">Works</a></li>
+        </ul>
+
+        <p>&copy; 2023 AKAYATSU Web Design</p>
+
+    </footer>
 
 
 
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -244,6 +244,28 @@ section{
     width: 50%;
     height: 100vh;
 }
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    animation: imgMove 6s linear infinite
+}
+@keyframes imgMove{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
 
 
 
@@ -450,6 +472,8 @@ main{
     }
 }
 
+
+
 .works-container{
     width: 100%;
 }
@@ -562,7 +586,31 @@ footer ul li a:hover{
 
 
 
-@media (max-width: 600px){
+@media (max-width: 1000px){
+
+
+    /* heroセクション */
+    .hero-section{
+        flex-direction: column;
+    }
+    .hero-text{
+        width: 100%;
+    }
+
+
+    /* worksセクション */
+    .works-container ul{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding: 30px;
+    }
+    
+
+}
+
+
+
+@media (max-width: 768px){
 
 
     /* ヘッダー */
@@ -578,6 +626,7 @@ footer ul li a:hover{
     .hero-text{
         width: 100%;
         align-items: flex-start;
+        justify-content: end;
         padding: 30px;
     }
     .hero-text h1{
@@ -611,7 +660,18 @@ footer ul li a:hover{
     }
 
 
+    main{
+        background-image: url(images/mobile_bg.jpg);
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+
     /* aboutセクション */
+    .about-section{
+        flex-direction: column;
+    }
     .about-content{
         width: 70%;
         padding: 20px;
@@ -623,8 +683,25 @@ footer ul li a:hover{
     .about-section h2{
         width: 100px;
         height: 100px;
-        margin-right: 10px;
+        margin-right: 0;
+        margin-bottom: 50px;
         font-size: 1rem;
+    }
+
+
+    /* newsセクション */
+    .card ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 0%;
+        opacity: 0;
+        transition: 2s;
+    }
+    .card.active ul{
+        height: 100%;
+        opacity: 1;
     }
 
 
@@ -652,24 +729,3 @@ footer ul li a:hover{
 
 
 
-@media (max-width: 1000px){
-
-
-    /* heroセクション */
-    .hero-section{
-        flex-direction: column;
-    }
-    .hero-text{
-        width: 100%;
-    }
-
-
-    /* worksセクション */
-    .works-container ul{
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        padding: 30px;
-    }
-    
-
-}

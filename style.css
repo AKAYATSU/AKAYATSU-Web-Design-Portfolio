@@ -639,6 +639,9 @@ footer ul li a:hover{
         font-size: 1.5rem;
         animation: titleSlide 8s linear infinite;
     }
+    .hero-img{
+        width: 100%;
+    }
     @keyframes titleSlide{
         0%{
             transform: translateX(0);

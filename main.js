@@ -1,4 +1,4 @@
-import * as THREE from "https://akayatsu.github.io/three.js/build/three.module.js";
+import * as THREE from 'three';
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color( 0x00a5dd );

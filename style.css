@@ -362,6 +362,20 @@ header ul li a:hover{
     transform: translateY(0);
 }
 
+@media (max-width: 1000px){
+    .works-section ul{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
 @media (max-width: 768px){
     .works-section{
         height: auto;

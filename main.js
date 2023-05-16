@@ -66,6 +66,17 @@ for (let i = 0; i < 100; i++){
 }
 
 
+window.addEventListener('resize', function(){
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setPixelRatio(window.devicePixelRatio);
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+  
+});
+
+
 let rot = 0;
 function animate() {
 	requestAnimationFrame( animate );
@@ -137,6 +148,17 @@ const particleMaterial = new THREE.PointsMaterial( {
 } );
 const points = new THREE.Points( particleGeometry, particleMaterial );
 scene2.add( points );
+
+
+window.addEventListener('resize', function(){
+
+    renderer2.setSize( window.innerWidth, window.innerHeight );
+    renderer2.setPixelRatio(window.devicePixelRatio);
+
+    camera2.aspect = window.innerWidth / window.innerHeight;
+    camera2.updateProjectionMatrix();
+  
+});
 
 
 let rot2 = 0;

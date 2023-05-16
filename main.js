@@ -19,7 +19,7 @@ hero.appendChild( renderer.domElement );
 
 
 const spaceGeometry = new THREE.SphereGeometry( 30, 64, 32 ); 
-const texture = new THREE.TextureLoader().load('/three.js/textures/texture.jpg' ); 
+const texture = new THREE.TextureLoader().load('./three.js/textures/texture.jpg' ); 
 const spaceMaterial = new THREE.MeshBasicMaterial( { map:texture } ); 
 const space = new THREE.Mesh( spaceGeometry, spaceMaterial );
 space.position.set( -35, 5, 0)

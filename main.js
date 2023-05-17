@@ -199,6 +199,13 @@ tl.to(".bg4", {opacity: 0, duration: 1},">3");
 tl.to(".bg1", {opacity: 1, duration: 1},">-1");
 
 
+const card =document.querySelector(".card");
+const content = document.querySelector(".content");
+card.addEventListener('click',function(){
+    content.classList.toggle("active");
+})
+
+
 const works = document.querySelector(".works-section");
 for(let i = 0; i < 1000; i++){
     const box = document.createElement('div');

@@ -96,7 +96,7 @@ animate();
 
 
 var typed = new Typed('#typewriter', {
-    strings: ['HTML', 'CSS', 'Javascript', 'WordPress'],
+    strings: ['Python.', 'HTML.', 'CSS.', 'Javascript.', 'WordPress.'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true,
